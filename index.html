@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans:wght@300&display=swap');
+    </style>
     <title>Document</title>
 </head>
+
 <body>
-    
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!--grupo del usuario-->
+            <div class="formulario_grupo" id="grupo_usuario">
+                <label for="usuario" class="formulario_label">Usuario</label>
+                <div class="formulario_input_grupo">
+                    <input type="text" class="formulario_input" name="usuario" id="usuario"
+                        placeholder="Ejemplo: Nicolas1990">
+                    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input_error">El usuario debe tener entre 8 y 16 caracteres, ya sea letras o
+                    números.</p>
+            </div>
+
+            <!--grupo del nombre-->
+            <div class="formulario_grupo" id="grupo_nombre">
+                <label for="nombre" class="formulario_label">Nombre</label>
+                <div class="formulario_input_grupo">
+                    <input type="text" class="formulario_input" name="nombre" id="nombre"
+                        placeholder="Ejemplo: Emanuel Cabrita">
+                    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input_error">El usuario debe tener entre 8 y 16 caracteres, ya sea letras o
+                    números.</p>
+            </div>
+
+
+            <!--grupo de la contraseña-->
+            <div class="formulario_grupo" id="grupo_password">
+                <label for="password" class="formulario_label">Contraseña</label>
+                <div class="formulario_input_grupo">
+                    <input type="password" class="formulario_input" name="password" id="password"
+                        placeholder="********">
+                    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input_error">La contraseña debe tener entre 8 y 16 caracteres, ya sea letras o
+                    números.</p>
+            </div>
+
+            <!--grupo de la contraseña de confirmacion-->
+            <div class="formulario_grupo" id="grupo_password2">
+                <label for="password2" class="formulario_label">Confirmar Contraseña</label>
+                <div class="formulario_input_grupo">
+                    <input type="password" class="formulario_input" name="password2" id="password2"
+                        placeholder="********">
+                    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input_error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+
+            <!--grupo del mail-->
+            <div class="formulario_grupo" id="grupo_mail">
+                <label for="mail" class="formulario_label">Correo Electrónico</label>
+                <div class="formulario_input_grupo">
+                    <input type="email" class="formulario_input" name="mail" id="mail"
+                        placeholder="Ejemplo: correo@gmail.com">
+                    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input_error">El correo debe ser sin mayúsculas.</p>
+            </div>
+
+            <!--grupo del telefono-->
+            <div class="formulario_grupo" id="grupo_telefono">
+                <label for="telefono" class="formulario_label">Teléfono</label>
+                <div class="formulario_input_grupo">
+                    <input type="text" class="formulario_input" name="telefono" id="telefono"
+                        placeholder="Ejemplo: 1123234545">
+                    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input_error">El teléfono debe ir sin el 0 y sin el 15.</p>
+            </div>
+
+            <!--grupo de terminos y condiciones-->
+            <div class="formulario_grupo" id="grupo_terminos">
+                <label>
+                    <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto Los Términos y Condiciones
+                </label>
+            </div>
+
+
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fa-solid fa-circle-exclamation"></i><b>Error:</b> Faltan datos por completar</p>
+            </div>
+
+            <div class="formulario_grupo formulario_grupo-btn-enviar">
+                <button type="submit" class="formulario_btn">Enviar</button>
+                <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado</p>
+            </div>
+        </form>
+    </main>
+
+
+    <script src="js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/e63cb93514.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
