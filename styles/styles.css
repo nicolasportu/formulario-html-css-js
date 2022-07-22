@@ -123,7 +123,7 @@ main {
   display: none;
 }
 
-formulario_mensaje-exito-activo {
+.formulario_mensaje-exito-activo {
   display: block;
 }
 
